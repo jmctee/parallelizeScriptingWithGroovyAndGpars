@@ -5,6 +5,30 @@
 :Date:      5/28/2015
 :Revision:  draft 0.1
 
-== Introduction
+== What is Groovy?
+
+* A Dynamic, Strongly Typed Language that targets the JVM infrastructure
+* Has very strong integrtion with Java
+** Almost all Java can be run as Groovy
+* With Grapes, easy to write stand-alone scripts
+* Easy to run bash commands from within script
+** Sometimes bash is easier than writing code
+
+link:http://www.groovy-lang.org/[Start here]
+
+== Groovy Grapes
+
+* Groovy dependency manager
+* Avoids need to for
+
+link:http://docs.groovy-lang.org/latest/html/documentation/grape.html[Start here]
+
+== GPARS
+
+* Groovy framework for concurrent processing
+* Only using small piece of the framework
+** Concurrent dispatch
+** Concurrent containers
+** Has actor component I am not using
 
 link:http://www.gpars.org/guide/index.html[Start here]
