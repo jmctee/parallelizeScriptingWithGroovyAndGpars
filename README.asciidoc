@@ -1,0 +1,10 @@
+= Parallelize that Groovy Script with GPARS
+
+:Author:    Joe McTee
+:Email:     mcjoe@jeklsoft.com
+:Date:      5/28/2015
+:Revision:  draft 0.1
+
+== Introduction
+
+link:http://www.gpars.org/guide/index.html[Start here]
