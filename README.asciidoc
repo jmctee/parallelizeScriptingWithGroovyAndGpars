@@ -80,9 +80,9 @@ sys	0m5.834s
 
 * 6 Threads
 
+```
 [jmctee@Philae data (master)]$ time ../unzipAndConvert.groovy 6
 
-```
 real	0m14.793s
 user	0m15.184s
 sys	0m6.255s
