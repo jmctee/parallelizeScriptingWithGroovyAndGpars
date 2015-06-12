@@ -39,7 +39,10 @@ link:http://www.gpars.org/guide/index.html[Start here]
 == Result of tests
 
 > To determine number of cpus/cores on a box:
-> ```cat /proc/cpuinfo | grep processor | wc -l```
+
+```
+cat /proc/cpuinfo | grep processor | wc -l
+```
 
 * Test data
 
