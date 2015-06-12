@@ -13,6 +13,7 @@
 * With Grapes, easy to write stand-alone scripts
 * Easy to run bash commands from within script
 ** Sometimes bash is easier than writing code
+** Groovy adds ".execute()" to both strings and arrays
 
 link:http://www.groovy-lang.org/[Start here]
 
@@ -32,3 +33,55 @@ link:http://docs.groovy-lang.org/latest/html/documentation/grape.html[Start here
 ** Has actor component I am not using
 
 link:http://www.gpars.org/guide/index.html[Start here]
+
+== Result of tests
+
+* Test data
+
+```
+[jmctee@Philae data (master)]$ ls
+./		archive_11.zip	archive_16.zip	archive_20.zip	archive_25.zip	archive_3.zip	archive_34.zip	archive_39.zip	archive_43.zip	archive_48.zip	archive_8.zip
+../		archive_12.zip	archive_17.zip	archive_21.zip	archive_26.zip	archive_30.zip	archive_35.zip	archive_4.zip	archive_44.zip	archive_49.zip	archive_9.zip
+archive_0.zip	archive_13.zip	archive_18.zip	archive_22.zip	archive_27.zip	archive_31.zip	archive_36.zip	archive_40.zip	archive_45.zip	archive_5.zip	set1/
+archive_1.zip	archive_14.zip	archive_19.zip	archive_23.zip	archive_28.zip	archive_32.zip	archive_37.zip	archive_41.zip	archive_46.zip	archive_6.zip
+archive_10.zip	archive_15.zip	archive_2.zip	archive_24.zip	archive_29.zip	archive_33.zip	archive_38.zip	archive_42.zip	archive_47.zip	archive
+```
+
+* No parallelization
+
+```
+[jmctee@Philae data (master)]$ time ../unzipAndConvert.groovy 1
+
+real	0m19.497s
+user	0m15.138s
+sys	0m6.691s
+```
+
+* 2 Threads
+[jmctee@Philae data (master)]$ time ../unzipAndConvert.groovy 2
+
+```
+real	0m16.890s
+user	0m15.335s
+sys	0m6.585s
+```
+
+* 4 Threads
+
+```
+[jmctee@Philae data (master)]$ time ../unzipAndConvert.groovy 4
+
+real	0m14.786s
+user	0m14.939s
+sys	0m5.834s
+```
+
+* 6 Threads
+
+[jmctee@Philae data (master)]$ time ../unzipAndConvert.groovy 6
+
+```
+real	0m14.793s
+user	0m15.184s
+sys	0m6.255s
+```
