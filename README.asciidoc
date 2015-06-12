@@ -8,7 +8,7 @@
 == What is Groovy?
 
 * A Dynamic, Strongly Typed Language that targets the JVM infrastructure
-* Has very strong integrtion with Java
+* Has very strong integration with Java
 ** Almost all Java can be run as Groovy
 * With Grapes, easy to write stand-alone scripts
 * Easy to run bash commands from within script
@@ -20,7 +20,9 @@ link:http://www.groovy-lang.org/[Start here]
 == Groovy Grapes
 
 * Groovy dependency manager
-* Avoids need to for
+* Avoids need to for pom or build files
+* Uses @Grab annotation to define dependencies
+** Same format as Gradle dependencies
 
 link:http://docs.groovy-lang.org/latest/html/documentation/grape.html[Start here]
 
